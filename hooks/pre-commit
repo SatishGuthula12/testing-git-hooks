@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Run ESLint
+npm run lint
+
+# Check the exit status of the lint command
+if [ $? -ne 0 ]; then
+    echo "ESLint errors found. Please fix them before committing."
+    exit 1
+fi
+
+# If all checks pass, exit successfully
+exit 0
