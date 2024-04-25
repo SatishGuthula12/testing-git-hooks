@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Set the core.hooksPath configuration
+git config core.hooksPath hooks
+
+# Remove execute permission from the pre-commit hook
+chmod -x hooks/pre-commit
