@@ -3,5 +3,5 @@
 # Set the core.hooksPath configuration
 git config core.hooksPath hooks
 
-# Remove execute permission from the pre-commit hook
-chmod -x hooks/pre-commit
+# Add execute permission to the pre-commit hook
+chmod +x hooks/pre-commit
